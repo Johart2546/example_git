@@ -23,6 +23,13 @@ Flow หลักของ Git มีดังนี้
 git init
 ```
 
+#### ตัวอย่างการใช้งาน (Use case)
+
+```sh
+git init              # เริ่มต้นใช้ Git ใน folder ปัจจุบัน
+git init my-project   # สร้าง folder ใหม่ชื่อ my-project แล้วเริ่มต้นใช้ Git
+```
+
 ### 2. git add
 
 เตรียมไฟล์เพื่อทำการ commit (stage change)
@@ -126,6 +133,14 @@ git checkout -b feature/login    # สร้าง branch สำหรับพ�
 git branch
 ```
 
+#### ตัวอย่างการใช้งาน (Use case)
+
+```sh
+git branch          # ดูรายการ branch ทั้งหมด
+git branch -v       # ดูรายการ branch พร้อม commit ล่าสุดของแต่ละ branch
+git branch -a       # ดูรวมทั้ง branch บน remote
+```
+
 ### รวม branch เข้าด้วยกัน
 
 ```sh
@@ -166,6 +181,33 @@ git branch                        # ตรวจสอบว่าเหลื�
 ```
 
 ## Remote
+
+### Clone
+
+```sh
+# คำจำกัดความ: คัดลอกโปรเจกต์ทั้งหมดจาก remote (เช่น GitHub) ลงมาบนเครื่อง
+git clone <url>
+```
+
+#### ตัวอย่างการใช้งาน (Use case)
+
+```sh
+git clone https://github.com/user/my-project.git   # ดาวน์โหลดโปรเจกต์ลงเครื่อง
+```
+
+### เพิ่ม remote (Remote add origin)
+
+```sh
+# คำจำกัดความ: กำหนด remote ชื่อ origin ให้ชี้ไปที่ repository บน GitHub / GitLab
+git remote add origin <url>
+```
+
+#### ตัวอย่างการใช้งาน (Use case)
+
+```sh
+git remote add origin https://github.com/user/my-project.git   # เชื่อมกับ GitHub
+git remote -v                                                 # ตรวจสอบ remote ที่ตั้งไว้
+```
 
 ### Push
 
