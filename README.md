@@ -4,7 +4,7 @@
 
 Git คือเครื่องมือที่ช่วยจัดการ version ของ code ทำให้เราสามารถ track change (การสร้าง / แก้ / ลบ) ได้ว่า ใครทำ เมื่อไหร่ และทำอะไรไปบ้าง
 
-## ขั้นตอนพื้นฐาน (Step ของ Git)
+## ขั้นตอนพื้นฐานของ Git
 
 Flow หลักของ Git มีดังนี้
 
@@ -23,7 +23,7 @@ Flow หลักของ Git มีดังนี้
 git init
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git init              # เริ่มต้นใช้ Git ใน folder ปัจจุบัน
@@ -42,7 +42,7 @@ git add <file>
 git add -A
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git add index.html    # stage ไฟล์ index.html
@@ -58,7 +58,7 @@ git add -A            # stage ทุกไฟล์ที่แก้ไขไ�
 git status
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git status            # เช็คว่ามีไฟล์อะไรเปลี่ยนบ้างก่อน commit
@@ -76,7 +76,7 @@ git commit -m '<commit message>'
 git commit -am '<commit message>'
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git commit -m "เพิ่มหน้า login"          # commit พร้อมข้อความอธิบาย
@@ -92,13 +92,13 @@ git commit -am "แก้ไขฟังก์ชัน login"     # add + commi
 git log
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git log --oneline     # ดูประวัติแบบย่อหนึ่งบรรทัดต่อ commit
 ```
 
-#### ตัวอย่างหน้าตา history (Output example)
+#### ตัวอย่างผลลัพธ์ของ git log
 
 ```sh
 $ git log --oneline
@@ -109,9 +109,9 @@ a1b2c3d เพิ่มหน้า login
 a9ee56c first commit
 ```
 
-history จะเรียงจาก commit ล่าสุด (บนสุด) ไปเก่า (ล่างสุด) โดย commit แรกของโปรเจกต์จะอยู่ล่างสุดเสมอ
+ประวัติ (history) จะเรียงจาก commit ล่าสุด (บนสุด) ไปเก่า (ล่างสุด) โดย commit แรกของโปรเจกต์จะอยู่ล่างสุดเสมอ
 
-## Branch
+## Branch (สาขา)
 
 ### สร้าง branch ใหม่
 
@@ -120,7 +120,7 @@ history จะเรียงจาก commit ล่าสุด (บนสุ�
 git checkout -b <branch>
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git checkout -b feature/login    # สร้าง branch สำหรับพัฒนาฟีเจอร์ login
@@ -133,7 +133,7 @@ git checkout -b feature/login    # สร้าง branch สำหรับพ�
 git branch
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git branch          # ดูรายการ branch ทั้งหมด
@@ -148,14 +148,14 @@ git branch -a       # ดูรวมทั้ง branch บน remote
 git merge <branch>
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git checkout main        # กลับมาที่ branch main
 git merge feature/login  # นำโค้ดจาก feature/login มารวมกับ main
 ```
 
-#### ตัวอย่างการใช้งานหลาย branch พร้อมกัน (Multi-branch use case)
+#### ตัวอย่างการใช้งานหลาย branch พร้อมกัน
 
 ```sh
 # สร้าง branch สำหรับพัฒนาฟีเจอร์ 2 ตัวพร้อมกันโดยไม่รบกวนกัน
@@ -180,56 +180,56 @@ git branch -d feature/payment
 git branch                        # ตรวจสอบว่าเหลือแต่ branch หลัก
 ```
 
-## Remote
+## Remote (รีโมท)
 
-### Clone
+### โคลนโปรเจกต์ (Clone)
 
 ```sh
 # คำจำกัดความ: คัดลอกโปรเจกต์ทั้งหมดจาก remote (เช่น GitHub) ลงมาบนเครื่อง
 git clone <url>
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git clone https://github.com/user/my-project.git   # ดาวน์โหลดโปรเจกต์ลงเครื่อง
 ```
 
-### เพิ่ม remote (Remote add origin)
+### ตั้งค่า remote แรก (Remote add origin)
 
 ```sh
 # คำจำกัดความ: กำหนด remote ชื่อ origin ให้ชี้ไปที่ repository บน GitHub / GitLab
 git remote add origin <url>
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git remote add origin https://github.com/user/my-project.git   # เชื่อมกับ GitHub
 git remote -v                                                 # ตรวจสอบ remote ที่ตั้งไว้
 ```
 
-### Push
+### อัปโหลดโค้ดขึ้น remote (Push)
 
 ```sh
 # คำจำกัดความ: อัปโหลด commit ที่ทำไว้บนเครื่องไปยัง remote เช่น GitHub หรือ GitLab
 git push
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git push                # ส่ง commit ทั้งหมดบนเครื่องขึ้น remote
 ```
 
-### Pull
+### ดึงโค้ดจาก remote (Pull)
 
 ```sh
 # คำจำกัดความ: ดึงข้อมูลและอัปเดตโค้ดล่าสุดจาก remote มาที่เครื่อง
 git pull
 ```
 
-#### ตัวอย่างการใช้งาน (Use case)
+#### ตัวอย่างการใช้งาน
 
 ```sh
 git pull                # ดึงการแก้ไขล่าสุดของเพื่อนร่วมทีมจาก remote
