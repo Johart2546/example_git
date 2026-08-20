@@ -1,6 +1,6 @@
 # example_git
 
-## Git Wrong data 
+## Git wrong data here
 
 Git คือเครื่องมือที่ช่วยจัดการ version ของ code ทำให้เราสามารถ track change (การสร้าง / แก้ / ลบ) ได้ว่า ใครทำ เมื่อไหร่ และทำอะไรไปบ้าง
 
