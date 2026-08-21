@@ -234,3 +234,5 @@ git pull
 ```sh
 git pull                # ดึงการแก้ไขล่าสุดของเพื่อนร่วมทีมจาก remote
 ```
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned 
