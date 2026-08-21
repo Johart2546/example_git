@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดห้องประชุม | จองห้องประชุม</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <span class="sidebar__logo" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+            <path d="m9 16 2 2 4-4"></path>
+          </svg>
+        </span>
+        <span class="sidebar__title">จองห้องประชุม</span>
+      </div>
+      <nav class="nav">
+        <div class="nav__item">
+          <a class="nav__link" href="index.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>ค้นหาห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item nav__item--active">
+          <a class="nav__link" href="my-bookings.html" aria-current="page">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>การจองของฉัน</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-rooms.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span>จัดการห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>รายการจองทั้งหมด</span>
+          </a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        <span class="avatar" aria-hidden="true">นส</span>
+        <span>ณัฐวุฒิ ส.</span>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h1 class="topbar__title">รายละเอียดห้องประชุม</h1>
+        <div class="topbar__user">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>ณัฐวุฒิ ส. / พนักงาน</span>
+        </div>
+      </header>
+      <div class="page">
+        <header class="page__header">
+          <h1 class="page__title">ห้อง A201</h1>
+          <p class="page__subtitle">อาคาร A · ชั้น 2 · ความจุ 10 ที่นั่ง</p>
+          <div class="page__actions">
+            <span class="badge badge--active">พร้อมใช้งาน</span>
+            <a class="btn btn--outline" href="index.html">ย้อนกลับ</a>
+          </div>
+        </header>
+        <div class="detail-grid">
+          <div class="detail-panel">
+            <h2 class="detail-panel__title">ข้อมูลห้องประชุม</h2>
+            <ul class="spec-list">
+              <li class="spec-item"><span>รหัสห้อง</span><strong>A201</strong></li>
+              <li class="spec-item"><span>อาคาร</span><strong>อาคาร A</strong></li>
+              <li class="spec-item"><span>ชั้น</span><strong>ชั้น 2</strong></li>
+              <li class="spec-item"><span>ความจุ</span><strong>10 ที่นั่ง</strong></li>
+              <li class="spec-item"><span>จำนวนจอ</span><strong>1</strong></li>
+              <li class="spec-item"><span>ไมโครโฟน</span><strong>2</strong></li>
+              <li class="spec-item"><span>TV</span><strong>1</strong></li>
+              <li class="spec-item"><span>ปลั๊กไฟ</span><strong>8</strong></li>
+              <li class="spec-item"><span>Layout</span><strong>ห้องประชุมแบบ U-Shape</strong></li>
+            </ul>
+            <h2 class="detail-panel__title">อุปกรณ์ภายในห้อง</h2>
+            <div class="chip-row">
+              <span class="chip">Projector</span>
+              <span class="chip">TV</span>
+              <span class="chip">Microphone ×2</span>
+              <span class="chip">Whiteboard</span>
+              <span class="chip">HDMI</span>
+              <span class="chip">Video Conference</span>
+              <span class="chip">Wi-Fi</span>
+            </div>
+            <div class="availability">
+              <span class="dot dot--green" aria-hidden="true"></span>
+              <span>ว่างในเวลาที่เลือก</span>
+            </div>
+          </div>
+          <div class="detail-panel">
+            <h2 class="detail-panel__title">จองห้องประชุม</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="booking-date">วันที่</label>
+                <input class="input" type="date" id="booking-date">
+              </div>
+              <div class="field">
+                <label class="field__label" for="start-time">เวลาเริ่ม</label>
+                <select class="select" id="start-time">
+                  <option value="09:00">09:00</option>
+                  <option value="10:00" selected>10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field__label" for="end-time">เวลาสิ้นสุด</label>
+                <select class="select" id="end-time">
+                  <option value="10:00">10:00</option>
+                  <option value="11:00" selected>11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booker">ผู้จอง</label>
+                <input class="input" type="text" id="booker" value="ณัฐวุฒิ ส.">
+              </div>
+            </div>
+            <span class="field__label">เลือกช่วงเวลา</span>
+            <div class="time-slots">
+              <button type="button" class="time-slot">09:00</button>
+              <button type="button" class="time-slot time-slot--selected">10:00</button>
+              <button type="button" class="time-slot time-slot--disabled" disabled>11:00</button>
+              <button type="button" class="time-slot">13:00</button>
+              <button type="button" class="time-slot">14:00</button>
+              <button type="button" class="time-slot time-slot--disabled" disabled>15:00</button>
+            </div>
+            <p>11:00 และ 15:00 ถูกจองแล้ว</p>
+            <p>ระยะเวลา: 1 ชั่วโมง</p>
+            <button type="button" class="btn btn--primary">ยืนยันการจอง</button>
+            <button type="button" class="btn btn--ghost">ยกเลิก</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ค้นหาห้องประชุม</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+            <path d="M16 2v4"></path>
+            <path d="M8 2v4"></path>
+            <path d="M3 10h18"></path>
+            <path d="m9 16 2 2 4-4"></path>
+          </svg>
+        </div>
+        <span class="sidebar__title">จองห้องประชุม</span>
+      </div>
+
+      <nav class="nav">
+        <div class="nav__item nav__item--active">
+          <a class="nav__link" href="index.html" aria-current="page">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <span>ค้นหาห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="my-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+              <path d="M16 2v4"></path>
+              <path d="M8 2v4"></path>
+              <path d="M3 10h18"></path>
+            </svg>
+            <span>การจองของฉัน</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-rooms.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>จัดการห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 6h13"></path>
+              <path d="M8 12h13"></path>
+              <path d="M8 18h13"></path>
+              <path d="M3 6h.01"></path>
+              <path d="M3 12h.01"></path>
+              <path d="M3 18h.01"></path>
+            </svg>
+            <span>รายการจองทั้งหมด</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="avatar">นส</div>
+        <span>ณัฐวุฒิ ส.</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 class="topbar__title">ค้นหาห้องประชุม</h1>
+        <div class="topbar__user">
+          <div class="avatar">นส</div>
+          <span>ณัฐวุฒิ ส.</span>
+          <span>พนักงาน</span>
+        </div>
+      </header>
+
+      <div class="page">
+        <div class="page__header">
+          <div>
+            <h2 class="page__title">ห้องประชุมทั้งหมด</h2>
+            <p class="page__subtitle">ค้นหาและตรวจสอบห้องประชุมว่าง</p>
+          </div>
+          <div class="page__actions">
+            <a class="btn btn--outline" href="my-bookings.html">ดูการจองของฉัน</a>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input class="search__input" type="search" placeholder="ค้นหาชื่อห้อง, อาคาร...">
+          </div>
+
+          <div class="filter-bar">
+            <div class="filter">
+              <label class="filter__label" for="filter-building">อาคาร</label>
+              <select class="select" id="filter-building">
+                <option>ทั้งหมด</option>
+                <option>อาคาร A</option>
+                <option>อาคาร B</option>
+              </select>
+            </div>
+            <div class="filter">
+              <label class="filter__label" for="filter-floor">ชั้น</label>
+              <select class="select" id="filter-floor">
+                <option>ทุกชั้น</option>
+                <option>ชั้น 1</option>
+                <option>ชั้น 2</option>
+                <option>ชั้น 3</option>
+              </select>
+            </div>
+            <div class="filter">
+              <label class="filter__label" for="filter-status">สถานะ</label>
+              <select class="select" id="filter-status">
+                <option>ทั้งหมด</option>
+                <option>พร้อมใช้งาน</option>
+                <option>ซ่อมบำรุง</option>
+                <option>ปิดใช้งาน</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">A101</h3>
+              <span class="badge badge--active">พร้อมใช้งาน</span>
+            </div>
+            <p class="room-card__code">อาคาร A · ชั้น 1</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>8 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 1</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 2</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">TV</span>
+                <span class="chip">HDMI</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <a class="btn btn--primary btn--sm" href="room-detail.html">ดูรายละเอียด / จอง</a>
+              <span><span class="dot dot--green"></span> ว่าง</span>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">A102</h3>
+              <span class="badge badge--active">พร้อมใช้งาน</span>
+            </div>
+            <p class="room-card__code">อาคาร A · ชั้น 1</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>12 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 2</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 4</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">TV</span>
+                <span class="chip">Whiteboard</span>
+                <span class="chip">Video Conference</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <a class="btn btn--primary btn--sm" href="room-detail.html">ดูรายละเอียด / จอง</a>
+              <span><span class="dot dot--green"></span> ว่าง</span>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">A103</h3>
+              <span class="badge badge--maintenance">ซ่อมบำรุง</span>
+            </div>
+            <p class="room-card__code">อาคาร A · ชั้น 1</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>6 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 1</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 1</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">Whiteboard</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <button class="btn btn--ghost btn--sm" type="button" disabled>ไม่พร้อมให้จอง</button>
+              <span><span class="dot dot--amber"></span> ซ่อมบำรุง</span>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">A201</h3>
+              <span class="badge badge--active">พร้อมใช้งาน</span>
+            </div>
+            <p class="room-card__code">อาคาร A · ชั้น 2</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>10 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 1</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 2</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">TV</span>
+                <span class="chip">Whiteboard</span>
+                <span class="chip">HDMI</span>
+                <span class="chip">Video Conference</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <a class="btn btn--primary btn--sm" href="room-detail.html">ดูรายละเอียด / จอง</a>
+              <span><span class="dot dot--green"></span> ว่าง</span>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">A202</h3>
+              <span class="badge badge--active">พร้อมใช้งาน</span>
+            </div>
+            <p class="room-card__code">อาคาร A · ชั้น 2</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>20 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 2</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 6</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">TV</span>
+                <span class="chip">Whiteboard</span>
+                <span class="chip">HDMI</span>
+                <span class="chip">Video Conference</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <a class="btn btn--primary btn--sm" href="room-detail.html">ดูรายละเอียด / จอง</a>
+              <span><span class="dot dot--green"></span> ว่าง</span>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-card__head">
+              <h3 class="room-card__name">B301</h3>
+              <span class="badge badge--disabled">ปิดใช้งาน</span>
+            </div>
+            <p class="room-card__code">อาคาร B · ชั้น 3</p>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>15 ที่นั่ง</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  <span>จอ 1</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <path d="M12 19v3"></path>
+                  </svg>
+                  <span>ไมโครโฟน 2</span>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Projector</span>
+                <span class="chip">HDMI</span>
+              </div>
+            </div>
+            <div class="room-card__foot">
+              <button class="btn btn--ghost btn--sm" type="button" disabled>ไม่พร้อมให้จอง</button>
+              <span><span class="dot dot--red"></span> ปิดใช้งาน</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

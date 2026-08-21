@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จัดการห้องประชุม — จองห้องประชุม</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18"/>
+            <path d="M5 21V7l7-4 7 4v14"/>
+            <path d="M9 21v-4h6v4"/>
+            <path d="M9 9h.01"/>
+            <path d="M15 9h.01"/>
+            <path d="M9 13h.01"/>
+            <path d="M15 13h.01"/>
+          </svg>
+        </div>
+        <span class="sidebar__title">จองห้องประชุม</span>
+      </div>
+
+      <nav class="nav">
+        <div class="nav__item">
+          <a class="nav__link" href="index.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+            </svg>
+            <span>ค้นหาห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="my-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <path d="M16 2v4"/>
+              <path d="M8 2v4"/>
+              <path d="M3 10h18"/>
+            </svg>
+            <span>การจองของฉัน</span>
+          </a>
+        </div>
+        <div class="nav__item nav__item--active">
+          <a class="nav__link" href="admin-rooms.html" aria-current="page">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21h18"/>
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/>
+              <path d="M9 7h1"/>
+              <path d="M14 7h1"/>
+              <path d="M9 11h1"/>
+              <path d="M14 11h1"/>
+              <path d="M9 15h1"/>
+              <path d="M14 15h1"/>
+            </svg>
+            <span>จัดการห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="8" y="2" width="8" height="4" rx="1"/>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <path d="M9 12h6"/>
+              <path d="M9 16h6"/>
+            </svg>
+            <span>รายการจองทั้งหมด</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <span class="avatar">กม</span>
+        <span>กมลชนก ร. (ผู้ดูแลระบบ)</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 class="topbar__title">จัดการห้องประชุม</h1>
+        <div class="topbar__user">กมลชนก ร. / ผู้ดูแลระบบ</div>
+      </header>
+
+      <div class="page">
+        <div class="page__header">
+          <div>
+            <h2 class="page__title">จัดการห้องประชุม</h2>
+            <p class="page__subtitle">เพิ่ม แก้ไข และจัดการสถานะห้องประชุม</p>
+          </div>
+          <div class="page__actions">
+            <a class="btn btn--primary" href="#">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 5v14"/>
+                <path d="M5 12h14"/>
+              </svg>
+              <span>เพิ่มห้องประชุม</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-card__value">6</div>
+            <div class="stat-card__label">ห้องทั้งหมด</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">4</div>
+            <div class="stat-card__label">พร้อมใช้งาน</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">1</div>
+            <div class="stat-card__label">ซ่อมบำรุง</div>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input class="search__input" type="search" placeholder="ค้นหาห้อง..." aria-label="ค้นหาห้องประชุม">
+          </div>
+          <div class="filter">
+            <label class="filter__label" for="building-filter">อาคาร</label>
+            <select class="select" id="building-filter" name="building">
+              <option>ทั้งหมด</option>
+              <option>อาคาร A</option>
+              <option>อาคาร B</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">รหัส</th>
+                <th scope="col">ชื่อห้อง</th>
+                <th scope="col">อาคาร/ชั้น</th>
+                <th scope="col">ความจุ</th>
+                <th scope="col">สถานะ</th>
+                <th scope="col">การจัดการ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A101</td>
+                <td>ห้องประชุม A101</td>
+                <td>อาคาร A / ชั้น 1</td>
+                <td>8</td>
+                <td><span class="badge badge--active">พร้อมใช้งาน</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">ปิดชั่วคราว</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A102</td>
+                <td>ห้องประชุม A102</td>
+                <td>อาคาร A / ชั้น 1</td>
+                <td>12</td>
+                <td><span class="badge badge--active">พร้อมใช้งาน</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">ปิดชั่วคราว</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A103</td>
+                <td>ห้องประชุม A103</td>
+                <td>อาคาร A / ชั้น 1</td>
+                <td>6</td>
+                <td><span class="badge badge--maintenance">ซ่อมบำรุง</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">เปิดใช้งาน</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A201</td>
+                <td>ห้องประชุม A201</td>
+                <td>อาคาร A / ชั้น 2</td>
+                <td>10</td>
+                <td><span class="badge badge--active">พร้อมใช้งาน</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">ปิดชั่วคราว</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A202</td>
+                <td>ห้องประชุม A202</td>
+                <td>อาคาร A / ชั้น 2</td>
+                <td>20</td>
+                <td><span class="badge badge--active">พร้อมใช้งาน</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">ปิดชั่วคราว</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>B301</td>
+                <td>ห้องประชุม B301</td>
+                <td>อาคาร B / ชั้น 3</td>
+                <td>15</td>
+                <td><span class="badge badge--disabled">ปิดใช้งาน</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">แก้ไข</button>
+                    <button type="button" class="btn btn--ghost btn--sm">เปิดใช้งาน</button>
+                    <button type="button" class="btn btn--danger btn--sm">ลบ</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

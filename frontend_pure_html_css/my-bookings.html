@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การจองของฉัน — จองห้องประชุม</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18"></path>
+            <path d="M5 21V7l7-4 7 4v14"></path>
+            <path d="M9 21v-4h6v4"></path>
+            <path d="M9 9h.01"></path>
+            <path d="M15 9h.01"></path>
+            <path d="M9 13h.01"></path>
+            <path d="M15 13h.01"></path>
+          </svg>
+        </div>
+        <span class="sidebar__title">จองห้องประชุม</span>
+      </div>
+
+      <nav class="nav">
+        <div class="nav__item">
+          <a class="nav__link" href="index.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span>ค้นหาห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item nav__item--active">
+          <a class="nav__link" href="my-bookings.html" aria-current="page">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+              <path d="M16 2v4"></path>
+              <path d="M8 2v4"></path>
+              <path d="M3 10h18"></path>
+            </svg>
+            <span>การจองของฉัน</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-rooms.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21h18"></path>
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+              <path d="M9 7h1"></path>
+              <path d="M14 7h1"></path>
+              <path d="M9 11h1"></path>
+              <path d="M14 11h1"></path>
+              <path d="M9 15h1"></path>
+              <path d="M14 15h1"></path>
+            </svg>
+            <span>จัดการห้องประชุม</span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="admin-bookings.html">
+            <svg class="nav__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="8" y="2" width="8" height="4" rx="1"></rect>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <path d="M9 12h6"></path>
+              <path d="M9 16h6"></path>
+            </svg>
+            <span>รายการจองทั้งหมด</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="avatar">นส</div>
+        <span>ณัฐวุฒิ ส.</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 class="topbar__title">การจองของฉัน</h1>
+        <div class="topbar__user">ณัฐวุฒิ ส. / พนักงาน</div>
+      </header>
+
+      <div class="page">
+        <div class="page__header">
+          <div>
+            <h2 class="page__title">การจองของฉัน</h2>
+            <p class="page__subtitle">จัดการและติดตามการจองห้องประชุมของคุณ</p>
+          </div>
+          <div class="page__actions">
+            <a class="btn btn--primary" href="index.html">จองห้องใหม่</a>
+          </div>
+        </div>
+
+        <div class="page__header">
+          <h2 class="page__subtitle">การจองปัจจุบัน</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ห้อง</th>
+                <th scope="col">วันที่</th>
+                <th scope="col">เวลา</th>
+                <th scope="col">สถานะ</th>
+                <th scope="col">การจัดการ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A201</td>
+                <td>26 ส.ค. 2568</td>
+                <td>10:00–11:00</td>
+                <td><span class="badge badge--confirmed">ยืนยันแล้ว</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">ดูรายละเอียด</button>
+                    <button type="button" class="btn btn--danger btn--sm">ยกเลิก</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A102</td>
+                <td>27 ส.ค. 2568</td>
+                <td>13:00–14:00</td>
+                <td><span class="badge badge--pending">รออนุมัติ</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">ดูรายละเอียด</button>
+                    <button type="button" class="btn btn--danger btn--sm">ยกเลิก</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A201</td>
+                <td>28 ส.ค. 2568</td>
+                <td>09:00–10:00</td>
+                <td><span class="badge badge--confirmed">ยืนยันแล้ว</span></td>
+                <td>
+                  <div class="table__actions">
+                    <button type="button" class="btn btn--outline btn--sm">ดูรายละเอียด</button>
+                    <button type="button" class="btn btn--danger btn--sm">ยกเลิก</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="page__header">
+          <h2 class="page__subtitle">ประวัติการจอง</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ห้อง</th>
+                <th scope="col">วันที่</th>
+                <th scope="col">เวลา</th>
+                <th scope="col">สถานะ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A101</td>
+                <td>15 ส.ค. 2568</td>
+                <td>09:00–10:00</td>
+                <td><span class="badge badge--completed">เสร็จสิ้น</span></td>
+              </tr>
+              <tr>
+                <td>A103</td>
+                <td>10 ส.ค. 2568</td>
+                <td>14:00–15:00</td>
+                <td><span class="badge badge--cancelled">ยกเลิกแล้ว</span></td>
+              </tr>
+              <tr>
+                <td>A202</td>
+                <td>05 ส.ค. 2568</td>
+                <td>11:00–12:00</td>
+                <td><span class="badge badge--completed">เสร็จสิ้น</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
